@@ -9,9 +9,9 @@ export default function Animal ({icone="?", nome="Desconhecido", peso=0.1, emExt
     AnimalProps){
     return (
     <div className="animal">
-        <div>{icone}</div>
-        <div>{nome}</div>
-        <div>{peso.toLocaleString()}kg</div>
-        <div>{emExtincao}</div>
+        <div className="icone">{icone}</div>
+        <div className="nome">{nome}</div>
+        <div className="peso">{peso.toLocaleString()}kg</div>
+        {emExtincao&&<div className="extincao">Ameacado</div>}
     </div>);
 }
